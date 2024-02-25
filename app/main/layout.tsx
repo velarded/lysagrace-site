@@ -1,14 +1,8 @@
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navbar from './main/components/Navbar'
+// import Navbar from './main/components/Navbar'
 import { Fragment } from 'react'
-import MainContainer from './main/components/MainContainer'
-import Hero from './page'
-import About from './main/about/page'
-import Media from './main/media/page'
-import Events from './main/events/page'
-import Lessons from './main/lessons/page'
-import Contact from './main/contact/page'
+// import MainContainer from './main/components/MainContainer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,12 +25,8 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
-          <Hero />
-          <About />
-          <Media />
-          <Events />
-          <Lessons />
-          <Contact />
+          {/* <Navbar />
+          <MainContainer name='test'>{children}</MainContainer> */}
       </body>
     </html>
   )

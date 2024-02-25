@@ -12,24 +12,35 @@ module.exports = {
       '': ['Sans Pro 3']
     },
     fontSize: {
-      sectionHeader: '3.75rem' 
+      sectionHeader: '3.75rem', 
+      heroTitle: ['10rem', {
+        lineHeight: '110%',
+        letterSpacing: '1.5rem',
+        fontWeight: '900'
+      }],
+      heroSubheading: ['1.25rem']
     },
     fontWeight: {
-      sectionHeader: '600'
+      sectionHeader: '600',
+      sectionText: '300'
     },
     letterSpacing: {
       'sitelogo': '0.3em',
-      'sectionHeader': '0.25rem'
+      'sectionHeader': '0.25rem',
     },
     extend: {
       colors: {
-        'iceblue': '#bacbdf'
+        'iceblue': '#bacbdf',
+        'containerBg': '#f1f1f1'
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      spacing: {
+        'hero-section': 'calc(100vh - 4rem)'
+      }
     },
   },
   plugins: [],

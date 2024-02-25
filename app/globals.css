@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.image-container {
+    padding: 20px;
+    width: 200px;
+}

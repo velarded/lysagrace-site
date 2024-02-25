@@ -5,7 +5,7 @@ export default function About() {
     return (
       <SectionContainer name='About'>
           <div className="lg:w-1/2">
-            <p className="pb-6">Lysa Grace (a.k.a Alyssa Datu), is a Filipino-Canadian singer/songwriter/vocal coach who is 
+            <p className="pb-6 ">Lysa Grace (a.k.a Alyssa Datu), is a Filipino-Canadian singer/songwriter/vocal coach who is 
               influenced by soul, gospel, R&B, jazz, pop, and musical theatre. She began training for voice, acting, 
               and modelling at the age of 7 and began performing in Toronto at the age of 10. 
               Lysa Grace is also an alumna of the University of Toronto Jazz program.</p>
@@ -23,9 +23,9 @@ export default function About() {
                 With her versatility and diverse background she is qualified to train her students in classical, musical theatre, jazz, and pop. 
                 Lysa Grace’s mantra as a coach is to use all aspects of one’s life, musical and non-musical, to tell a story and express the essence of emotion in a way that is unique and unreplicable.</p>
           </div>
-          <div className="lg:w-1/2">
-            <Image src="/headshotalyssa.jpeg" width={1200} height={1200} alt="Picture of the author" />
-          </div>
+          {/* <div className="lg:w-1/2">
+            <Image src="/headshotalyssa.jpeg" width={1200} height={1200} alt="Picture of the author" className="rounded-tl-[150px] rounded-br-[150px] md:rounded-tl-[300px] md:rounded-br-[300px]"/>
+          </div> */}
       </SectionContainer>
     )
   }

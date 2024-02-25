@@ -16,7 +16,10 @@ function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ')
 }
 
-const Navbar = () => {
+type NavBarProps = { isHero: boolean; };
+
+const Navbar = ({ isHero }: NavBarProps) => {
+  console.log("isHero: ", typeof isHero);
   return (
     <Disclosure as="nav" className="bg-iceblue">
       {({ open }) => (
@@ -37,7 +40,7 @@ const Navbar = () => {
               </div>
               <div className="flex flex-1 items-center justify-center lg:justify-between lg:items-stretch">
                 <div className="flex flex-shrink-0 items-center">
-                  <Link href="/" className="w-auto font-messiri uppercase tracking-sitelogo text-base font">Lysa Grace</Link>
+                  {!isHero && <Link href="/" className="w-auto font-messiri uppercase tracking-sitelogo text-base font">Lysa Grace</Link>}
                 </div>
                 <div className="hidden lg:ml-6 lg:block">
                   <div className="flex space-x-4">
@@ -47,7 +50,7 @@ const Navbar = () => {
                         href={item.href}
                         className={classNames(
                           item.current ? 'bg-gray-900 text-white' : 'text-black hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium uppercase tracking-[.15em]'
+                          'rounded-md px-3 py-2 text-sm font-messiri uppercase tracking-[.15em]'
                         )}
                         aria-current={item.current ? 'page' : undefined}
                       >
@@ -60,7 +63,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="md:hidden">
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button
@@ -69,7 +72,7 @@ const Navbar = () => {
                   href={item.href}
                   className={classNames(
                     item.current ? 'bg-gray-900 text-white' : 'text-black-300 hover:bg-gray-700 hover:text-white',
-                    'block rounded-md px-3 py-2 text-base font-medium'
+                    'block rounded-md px-3 py-2 text-messiri font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
                 >
