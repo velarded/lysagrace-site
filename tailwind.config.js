@@ -18,7 +18,9 @@ module.exports = {
         letterSpacing: '1.5rem',
         fontWeight: '900'
       }],
-      heroSubheading: ['1.25rem']
+      heroSubheading: ['1.25rem', {
+        letterSpacing: '0.25rem'
+      }]
     },
     fontWeight: {
       sectionHeader: '600',

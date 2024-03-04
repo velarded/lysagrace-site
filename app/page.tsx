@@ -5,8 +5,8 @@ export default function Hero() {
 
   return (
     <div>
-    <Navbar isHero={true}/>
-    <section className="flex gap-[10rem] justify-center items-center bg-iceblue h-hero-section">
+    {/* <Navbar isHero={true}/> */}
+    <section id="hero" className="flex gap-[10rem] justify-center items-center bg-iceblue h-hero-section">
       <div className="w-1/2 flex justify-center items-center">
         <div className="flex-col">
           <h1 className="font-messiri uppercase text-heroTitle">Lysa</h1>

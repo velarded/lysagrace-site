@@ -21,7 +21,7 @@ type NavBarProps = { isHero: boolean; };
 const Navbar = ({ isHero }: NavBarProps) => {
   console.log("isHero: ", typeof isHero);
   return (
-    <Disclosure as="nav" className="bg-iceblue">
+    <Disclosure as="nav" className="bg-iceblue sticky top-0">
       {({ open }) => (
         <>
           <div className="mx-auto px-2 sm:px-6 lg:px-8">

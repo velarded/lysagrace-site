@@ -9,6 +9,7 @@ import Media from './main/media/page'
 import Events from './main/events/page'
 import Lessons from './main/lessons/page'
 import Contact from './main/contact/page'
+import Footer from './main/components/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -31,12 +32,16 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
+          <Navbar isHero={false}/>
           <Hero />
-          <About />
-          <Media />
-          <Events />
-          <Lessons />
-          <Contact />
+          <MainContainer>
+            <About />
+            <Media />
+            <Events />
+            <Lessons />
+            <Contact />
+          </MainContainer>
+          <Footer />
       </body>
     </html>
   )
