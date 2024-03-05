@@ -6,6 +6,11 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    screens: {
+      'tablet': '640px',
+      'laptop': '1024px',
+      'desktop': '1280px'
+    },
     fontFamily: {
       'messiri': ['El Messiri'],
       'textContent': ['Sans Pro 3'],
@@ -13,12 +18,20 @@ module.exports = {
     },
     fontSize: {
       sectionHeader: '3.75rem', 
-      heroTitle: ['10rem', {
+      heroTitle: ['5rem', {
+        lineHeight: '110%',
+        letterSpacing: '0.5rem',
+        fontWeight: '900'
+      }], 
+      heroTitleDesktop: ['10rem', {
         lineHeight: '110%',
         letterSpacing: '1.5rem',
         fontWeight: '900'
       }],
-      heroSubheading: ['1.25rem', {
+      heroSubheading: ['0.6rem', {
+        letterSpacing: '0.25rem'
+      }],
+      heroSubheadingDesktop: ['1.25rem', {
         letterSpacing: '0.25rem'
       }]
     },

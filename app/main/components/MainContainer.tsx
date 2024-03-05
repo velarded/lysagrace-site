@@ -2,8 +2,8 @@
 
 const MainContainer = (props: any) => {
     return (
-        <main className="bg-iceblue min-h-screen flex justify-center">
-          <div className="main-container-test w-screen rounded-lg 2xl:mx-[150px] md:mx-[100px]">
+        <main className="bg-iceblue min-h-screen max-w-screen flex justify-center desktop:px-[150px] md:px-[100px]">
+          <div className="rounded-lg w-full bg-containerBg">
             {props.children}
           </div>
         </main>
