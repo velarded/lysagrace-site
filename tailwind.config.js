@@ -42,6 +42,7 @@ module.exports = {
     letterSpacing: {
       'sitelogo': '0.3em',
       'sectionHeader': '0.25rem',
+      'footer': '0.1rem'
     },
     extend: {
       colors: {
